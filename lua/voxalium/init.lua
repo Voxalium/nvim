@@ -1,0 +1,5 @@
+require "voxalium.options"
+require "voxalium.keymaps"
+require "voxalium.plugins"
+require "voxalium.colors"
+require "voxalium.lsp"
