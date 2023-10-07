@@ -3,6 +3,7 @@ if not status_ok then
   return
 end
 
+require "voxalium.lsp.emmet"
 require "voxalium.lsp.mason"
 require("voxalium.lsp.handlers").setup()
 require "voxalium.lsp.null-ls"
