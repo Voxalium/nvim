@@ -1,1 +1,1 @@
-require("voxalium")
+require "config"

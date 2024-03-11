@@ -1,0 +1,32 @@
+local options={
+	clipboard="unnamedplus",
+	backup=false,
+	number= true,
+	ignorecase=true,
+	undofile=true,
+    incsearch=true,
+    hlsearch=false,
+    smartcase=true,
+	tabstop=4,
+	shiftwidth=4,
+	softtabstop=4,
+	expandtab=true,
+	smartindent=true,
+	updatetime=300,
+	pumheight=10,
+    termguicolors=true,
+    colorcolumn= "100",
+    signcolumn= "yes",
+    completeopt= "menuone,noinsert,noselect",
+    hidden=true,
+    swapfile=false,
+    backspace="indent,eol,start",
+    splitright=true,
+    splitbelow=true,
+    autochdir=false,
+    modifiable=true,
+    encoding="UTF-8",
+}
+for k, v in pairs(options) do
+	vim.opt[k]=v
+end
