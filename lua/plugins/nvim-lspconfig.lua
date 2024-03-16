@@ -212,6 +212,7 @@ local config = function()
 				solidity = { solhint },
 				html = { prettier_d },
 				css = { prettier_d },
+				scss = { prettier_d },
 				c = { clangformat, cpplint },
 				cpp = { clangformat, cpplint },
 			},
@@ -235,7 +236,6 @@ return {
 		"hrsh7th/cmp-nvim-lua",
 		"hrsh7th/cmp-path",
 		"rafamadriz/friendly-snippets",
-
 		"jose-elias-alvarez/null-ls.nvim",
 	},
 }
