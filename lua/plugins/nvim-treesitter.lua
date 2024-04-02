@@ -19,6 +19,7 @@ local config = function()
 			"typescript",
 			"yaml",
 			"html",
+			"php",
 			"css",
 			"markdown",
 			"bash",
@@ -53,3 +54,4 @@ return {
 	lazy = false,
 	config = config,
 }
+
