@@ -109,6 +109,7 @@ local config = function()
 			"svelte",
 			"vue",
 			"html",
+			"php",
 		},
 		init_options = {
 			html = {
@@ -140,7 +141,7 @@ local config = function()
 		on_attach = on_attach,
 	})
 
-	lspconfig.phpactor.setup({
+	lspconfig.intelephense.setup({
 		on_attach = on_attach,
 		capabilities = capabilities,
 		{ filetypes = {
@@ -173,7 +174,7 @@ local config = function()
 	local clangformat = require("efmls-configs.formatters.clang_format")
 	--local phpcs = require("efmls-configs.linters.phpcs")
 	--local phpcbf = require("efmls-configs.formatters.phpcbf")
-	local php_cs_fixer = require("efmls-configs.formatters.php_cs_fixer")
+	--local php_cs_fixer = require("efmls-configs.formatters.php_cs_fixer")
 
 	-- configure efm server
 	lspconfig.efm.setup({
@@ -227,7 +228,7 @@ local config = function()
 				scss = { prettier_d },
 				c = { clangformat, cpplint },
 				cpp = { clangformat, cpplint },
-				--php = { php_cs_fixer },
+				--php = { prettier_d },
 			},
 		},
 	})
