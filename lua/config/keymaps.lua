@@ -23,10 +23,10 @@ keymap("n", "<leader>sS", ":split<CR>", opts)
 keymap("n", "<leader>SS", ":MaximizerToggle<CR>", opts)
 
 --Move text up and down
-keymap("n", "<A-Down>", "<S-v> :m.+1<CR>==", opts)
-keymap("n", "<A-Up>", "<S-v> :m.-2<CR>==", opts)
-keymap("x", "<A-Down>", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)
+keymap("n", "<A-j>", "<S-v> :m.+1<CR>==", opts)
+keymap("n", "<A-k>", "<S-v> :m.-2<CR>==", opts)
+keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
+keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 --Indent
 keymap("v", "<", "<gv", opts)

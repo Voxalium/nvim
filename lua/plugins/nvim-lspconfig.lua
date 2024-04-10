@@ -195,6 +195,7 @@ local config = function()
 			"solidity",
 			"html",
 			"css",
+			"scss",
 			"c",
 			"cpp",
 			"php",
