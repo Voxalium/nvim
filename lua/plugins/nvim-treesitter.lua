@@ -1,4 +1,7 @@
 local config = function()
+  require("nvim-treesitter.install").prefer_git = false
+  require("nvim-treesitter.install").compilers = {"clang", "gcc"}
+
 	require("nvim-treesitter.configs").setup({
 		build = ":TSUpdate",
 		indent = {
@@ -16,10 +19,10 @@ local config = function()
 			"markdown",
 			"json",
 			"javascript",
-			"typescript",
+		--	"typescript",
 			"yaml",
 			"html",
-			"php",
+		--	"php",
 			"css",
 			"markdown",
 			"bash",

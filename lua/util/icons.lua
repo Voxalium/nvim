@@ -1,7 +1,7 @@
 local M = {}
 
 M.debugging_signs = {
-	Stopped = { "󰁕 ", "DiagnosticWarn", "DapStoppedLine" },
+	Stopped = { "→", "DiagnosticWarn", "DapStoppedLine" },
 	Breakpoint = " ",
 	BreakpointCondition = " ",
 	BreakpointRejected = { " ", "DiagnosticError" },
@@ -11,8 +11,9 @@ M.debugging_signs = {
 M.diagnostic_signs = {
 	Error = " ",
 	Warn = " ",
-	Hint = "",
-	Info = "",
+	Hint = " ",
+	Info = " ",
 }
 
 return M
+

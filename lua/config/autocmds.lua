@@ -19,6 +19,11 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 	command = "silent! !php-cs-fixer fix .",
 })
 
+vim.api.nvim_create_autocmd("BufWritePost", {
+	pattern = { "*.html", "*.js" },
+	command = "silent! !prettier -w .",
+})
+
 -- highlight on yank
 local highlight_yank_group = vim.api.nvim_create_augroup("HighlightYankGroup", {})
 vim.api.nvim_create_autocmd("TextYankPost", {
@@ -27,3 +32,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+

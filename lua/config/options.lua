@@ -26,6 +26,7 @@ local options = {
 	autochdir = false,
 	modifiable = true,
 	encoding = "UTF-8",
+  mouse = "a",
 }
 for k, v in pairs(options) do
 	vim.opt[k] = v

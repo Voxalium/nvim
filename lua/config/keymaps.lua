@@ -37,3 +37,7 @@ keymap("n", "<S-Right>", ":bnext<CR>", opts)
 keymap("n", "<S-Left>", ":bprevious<CR>", opts)
 keymap("n", "<Leader>x", ":bdelete<CR>", opts)
 
+keymap("n", "K", "<cmd>Lspsaga hover_doc", opts)
+
+keymap("n", "<C-w>", ":e #<CR>", opts)
+
