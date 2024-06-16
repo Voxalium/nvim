@@ -28,6 +28,7 @@ local kind_icons = {
 
 return {
 	"hrsh7th/nvim-cmp",
+  commit="b356f2c",
 	config = function()
 		local cmp = require("cmp")
 		local luasnip = require("luasnip")
@@ -128,3 +129,4 @@ return {
 		"rafamadriz/friendly-snippets",
 	},
 }
+

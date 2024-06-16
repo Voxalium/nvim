@@ -1,9 +1,6 @@
-return {
-	"windwp/nvim-ts-autotag",
-	lazy = false,
-	opts = {},
-	dependencies = {
-		"nvim-treesitter/nvim-treesitter",
-	},
+return{
+  "windwp/nvim-ts-autotag",
+  commit="aeb7090",
+  lazy=false,
+  opts={},
 }
-

@@ -34,6 +34,18 @@ local config = function()
 		},
 	})
 
+	--[[ --angular
+	lspconfig.angularls.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+	}) ]]
+
+	--zig
+	lspconfig.zls.setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+		filetypes = { "zig" },
+	})
 	-- json
 	lspconfig.jsonls.setup({
 		capabilities = capabilities,

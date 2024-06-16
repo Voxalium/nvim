@@ -1,7 +1,6 @@
 local config = function()
 	require("nvim-treesitter.install").prefer_git = false
 	require("nvim-treesitter.install").compilers = { "clang", "gcc" }
-	--tes
 
 	require("nvim-treesitter.configs").setup({
 		build = ":TSUpdate",

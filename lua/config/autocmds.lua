@@ -19,10 +19,10 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 	command = "silent! !php-cs-fixer fix .",
 })
 
-vim.api.nvim_create_autocmd("BufWritePost", {
-	pattern = { "*.html", "*.js" },
+--[[ vim.api.nvim_create_autocmd("BufWritePost", {
+	pattern = { "*.html", "*.js", "*.ts" },
 	command = "silent! !prettier -w .",
-})
+}) ]]
 
 -- highlight on yank
 local highlight_yank_group = vim.api.nvim_create_augroup("HighlightYankGroup", {})
