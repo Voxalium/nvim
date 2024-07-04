@@ -46,6 +46,9 @@ local config = function()
 				node_decremental = "<BS>",
 			},
 		},
+		dependencies = {
+			{ "windwp/nvim-ts-autotag" },
+		},
 	})
 end
 

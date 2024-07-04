@@ -7,9 +7,9 @@ local options = {
 	incsearch = true,
 	hlsearch = false,
 	smartcase = true,
-	tabstop = 4,
-	shiftwidth = 4,
-	softtabstop = 4,
+	tabstop = 2,
+	shiftwidth = 2,
+	softtabstop = 2,
 	expandtab = true,
 	smartindent = true,
 	updatetime = 300,
@@ -29,6 +29,7 @@ local options = {
 	encoding = "UTF-8",
 	mouse = "a",
 	scrolloff = 6,
+	linebreak = true,
 }
 for k, v in pairs(options) do
 	vim.opt[k] = v

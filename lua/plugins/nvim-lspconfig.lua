@@ -26,8 +26,8 @@ local config = function()
 				workspace = {
 					-- make language server aware of runtime files
 					library = {
-						[vim.fn.expand("$VIMRUNTIME/lua")] = true,
-						[vim.fn.stdpath("config") .. "/lua"] = true,
+						vim.fn.expand("$VIMRUNTIME/lua"),
+						vim.fn.stdpath("config") .. "/lua",
 					},
 				},
 			},
@@ -170,11 +170,6 @@ local config = function()
 	local shfmt = require("efmls-configs.formatters.shfmt")
 	local hadolint = require("efmls-configs.linters.hadolint")
 	local solhint = require("efmls-configs.linters.solhint")
-	local cpplint = require("efmls-configs.linters.cpplint")
-	local clangformat = require("efmls-configs.formatters.clang_format")
-	--local phpcs = require("efmls-configs.linters.phpcs")
-	--local phpcbf = require("efmls-configs.formatters.phpcbf")
-	--local php_cs_fixer = require("efmls-configs.formatters.php_cs_fixer")
 
 	-- configure efm server
 	lspconfig.efm.setup({
@@ -214,7 +209,6 @@ local config = function()
 				python = { flake8, black },
 				typescript = { eslint, prettier_d },
 				json = { eslint, fixjson },
-				--jsonc = { eslint, fixjson },
 				sh = { shellcheck, shfmt },
 				javascript = { eslint, prettier_d },
 				javascriptreact = { eslint, prettier_d },
@@ -227,9 +221,6 @@ local config = function()
 				html = { prettier_d },
 				css = { prettier_d },
 				scss = { prettier_d },
-				--c = { clangformat, cpplint },
-				--cpp = { clangformat, cpplint },
-				--php = { prettier_d },
 			},
 		},
 	})
