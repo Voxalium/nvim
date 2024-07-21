@@ -4,8 +4,8 @@ local config= function()
     telescope.setup({
         defaults = {
 
-            prompt_prefix = "",
-            selection_caret = "",
+            prompt_prefix = " ",
+            selection_caret = " ",
             path_display = { "smart" },
 
             mappings = {
@@ -21,34 +21,41 @@ local config= function()
         pickers = {
             find_files = {
                 theme="dropdown",
-                previewer=false,
+                previewer=true,
                 hidden = true,
             },
             live_grep = {
                 theme= "dropdown",
-                previewer=false,
+                previewer=true,
             },
 
             find_buffers = {
                 theme= "dropdown",
-                previewer=false,
+                previewer=true,
             }
         },
     })
+    --telescope.load_extension("fzf")
 end
 
 return {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
     lazy= false,
-    dependencies = {"nvim-lua/plenary.nvim"},
+    dependencies = {"nvim-lua/plenary.nvim",
+    --{"nvim-telescope/telescope-fzf-native.nvim",build="make"},
+    "folke/todo-comments.nvim",
+    "nvim-tree/nvim-web-devicons",
+  },
     config=config,
     key={
-        keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>"),
-        keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>"),
-        keymap.set("n", "<leader>ff", ":Telescope find_files<CR>"),
-        keymap.set("n", "<leader>fa", ":Telescope <CR>"),
-        keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>"),
-        keymap.set("n", "<leader>fb", ":Telescope buffers<CR>"),
+        keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>",{desc="Find Keymaps"}),
+        keymap.set("n", "<leader>ff", ":Telescope find_files<CR>",{desc="Find Files"}),
+        keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>",{desc="Find Help"}),
+        keymap.set("n", "<leader>ft", ":TodoTelescope<CR>",{desc="Find Todos"}),
+        keymap.set("n", "<leader>fa", ":Telescope <CR>",{desc="Open Telescope"}),
+        keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>",{desc="Find Grep"}),
+        keymap.set("n", "<leader>fs", ":Telescope grep_string<CR>",{desc="Find String"}),
+        keymap.set("n", "<leader>fb", ":Telescope buffers<CR>",{desc="Find Buffer"}),
     },
 
 }
