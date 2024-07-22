@@ -24,11 +24,14 @@ return {
 				"pyright",
 				"lua_ls",
 				"emmet_ls",
+				"jdtls",
 			},
 		})
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"prettier",
+				"java-debug-adapter",
+				"java-test",
 				"stylua",
 				"isort",
 				"black",

@@ -21,7 +21,7 @@ local config = function()
 			find_files = {
 				theme = "dropdown",
 				previewer = true,
-				hidden = true,
+				hidden = false,
 			},
 			live_grep = {
 				theme = "dropdown",

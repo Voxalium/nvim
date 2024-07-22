@@ -27,6 +27,7 @@ return {
 			map("n", "<leader>hR", gs.reset_buffer, "Reset buffer")
 
 			map("n", "<leader>hu", gs.undo_stage_hunk, "Undo stage hunk")
+			map("n", "<leader>ht", gs.toggle_signs, "Toggle signs")
 
 			map("n", "<leader>hp", gs.preview_hunk, "Preview hunk")
 

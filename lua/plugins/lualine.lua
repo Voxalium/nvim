@@ -1,5 +1,5 @@
-local config = function()  
-  local lazy_status = require("lazy.status")
+local config = function()
+	local lazy_status = require("lazy.status")
 	require("lualine").setup({
 		options = {
 			theme = "tokyonight",
@@ -7,22 +7,22 @@ local config = function()
 			component_separators = { left = "|", right = "|" },
 			section_separators = { left = "", right = "" },
 		},
-    sections= {
-      lualine_x = {
-        {
-          lazy_status.updates,
-          cond = lazy_status.has_updates,          
-          color = {fg="#ff9e64"},
-        },
-        {"encoding"},
-        {"filetype"},
-      },
-    },
+		sections = {
+			lualine_x = {
+				{
+					lazy_status.updates,
+					cond = lazy_status.has_updates,
+					color = { fg = "#ff9e64" },
+				},
+				{ "encoding" },
+				{ "filetype" },
+			},
+		},
 
 		tabline = {
 			lualine_b = { "buffers" },
 		},
-  })
+	})
 end
 
 return {
