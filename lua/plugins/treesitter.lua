@@ -21,6 +21,8 @@ return {
 				"python",
 				"c",
 				"vim",
+				"vimdoc",
+				"luadoc",
 				"java",
 			},
 
