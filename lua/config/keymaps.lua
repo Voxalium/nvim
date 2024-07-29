@@ -46,5 +46,8 @@ keymap("n", "<Leader>x", ":bdelete<CR>", opts("Delete Buffer"))
 keymap("n", "K", "<cmd>Lspsaga hover_doc", opts())
 
 keymap("n", "<C-w>", ":e #<CR>", opts())
-
+keymap("i", "<C-Del>", "<esc>ldvwi", opts("Delete next word"))
 keymap("n", "<leader>hh", ":cd %:h<CR>", opts("Set home to current directory"))
+
+--Term
+keymap("t", "<esc>", [[<C-\><C-n>]], opts())

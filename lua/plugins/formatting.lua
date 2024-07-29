@@ -20,6 +20,7 @@ return {
 				liquid = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
+				cs = { "csharpier" },
 			},
 			format_on_save = {
 				timeout_ms = 500,

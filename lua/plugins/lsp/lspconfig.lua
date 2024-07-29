@@ -122,6 +122,12 @@ return {
 					filetypes = { "java" },
 				})
 			end,
+			["csharp_ls"] = function()
+				lspconfig["csharp_ls"].setup({
+					capabilities = capabilities,
+					filetypes = { "cs" },
+				})
+			end,
 		})
 	end,
 }
