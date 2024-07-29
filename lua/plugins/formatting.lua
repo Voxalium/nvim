@@ -20,11 +20,11 @@ return {
 				liquid = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
+				cs = { "csharpier" },
 			},
 			format_on_save = {
-				lsp_fallback = true,
-				async = true,
-				timeout_ms = 100,
+				lsp_format = "fallback",
+				timeout_ms = 500,
 			},
 		})
 
