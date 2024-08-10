@@ -2,9 +2,9 @@ local config = function()
 	local lazy_status = require("lazy.status")
 	require("lualine").setup({
 		options = {
-			theme = "tokyonight",
+			theme = "auto",
 			globalstatus = true,
-			component_separators = { left = "|", right = "|" },
+			component_separators = { left = "❱", right = "❱" },
 			section_separators = { left = "", right = "" },
 		},
 		sections = {
@@ -14,7 +14,6 @@ local config = function()
 					cond = lazy_status.has_updates,
 					color = { fg = "#ff9e64" },
 				},
-				{ "encoding" },
 				{ "filetype" },
 			},
 		},

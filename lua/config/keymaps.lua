@@ -7,6 +7,10 @@ local function opts(desc)
 	return { noremap = true, silent = true, desc = desc }
 end
 
+--Move in insert mode
+keymap("i", "<C-h>", "<Left>", opts("Move left"))
+keymap("i", "<C-l>", "<Right>", opts("Move right"))
+
 --Tree
 keymap("n", "<leader>e", ":NvimTreeFindFileToggle!<CR>", opts("Toggle file explorer"))
 keymap("n", "<leader>E", ":NvimTreeCollapse<CR>", opts("Collapse file explorer"))
@@ -51,3 +55,9 @@ keymap("n", "<leader>hh", ":cd %:h<CR>", opts("Set home to current directory"))
 
 --Term
 keymap("t", "<esc>", [[<C-\><C-n>]], opts())
+
+--Surround
+keymap("n", '<leader>s"', ':norm ysiw"<CR>', opts("Surround with double quotes"))
+keymap("n", "<leader>s(", ":norm ysiw(<CR>", opts("Surround with parentheses"))
+keymap("n", "<leader>s{", ":norm ysiw{<CR>", opts("Surround with curly braces"))
+keymap("n", "<leader>s[", ":norm ysiw[]<CR>", opts("Surround with square brackets"))
