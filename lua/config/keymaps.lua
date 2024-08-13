@@ -11,6 +11,10 @@ end
 keymap("i", "<C-h>", "<Left>", opts("Move left"))
 keymap("i", "<C-l>", "<Right>", opts("Move right"))
 
+--Move in wrap line
+keymap("n", "k", "gk", opts("Move up"))
+keymap("n", "j", "gj", opts("Move down"))
+
 --Tree
 keymap("n", "<leader>e", ":NvimTreeFindFileToggle!<CR>", opts("Toggle file explorer"))
 keymap("n", "<leader>E", ":NvimTreeCollapse<CR>", opts("Collapse file explorer"))

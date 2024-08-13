@@ -35,6 +35,7 @@ local config = function()
 		},
 	})
 	telescope.load_extension("fzf")
+	telescope.load_extension("project")
 end
 
 return {
@@ -44,6 +45,7 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+		"nvim-telescope/telescope-project.nvim",
 		"folke/todo-comments.nvim",
 		"nvim-tree/nvim-web-devicons",
 	},
@@ -57,5 +59,6 @@ return {
 		keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Find Grep" }),
 		keymap.set("n", "<leader>fs", ":Telescope grep_string<CR>", { desc = "Find String" }),
 		keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "Find Buffer" }),
+		keymap.set("n", "<leader>fp", ":Telescope project<CR>", { desc = "Find project" }),
 	},
 }
