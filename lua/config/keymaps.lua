@@ -47,13 +47,11 @@ keymap("v", "<", "<gv", opts())
 keymap("v", ">", ">gv", opts())
 
 -- Navigate buffers
-keymap("n", "<S-Right>", ":bnext<CR>", opts())
-keymap("n", "<S-Left>", ":bprevious<CR>", opts())
+keymap("n", "<S-Right>", ":bnext<CR>", opts("Next Buffer"))
+keymap("n", "<S-Left>", ":bprevious<CR>", opts("Previous Buffer"))
 keymap("n", "<Leader>x", ":bdelete<CR>", opts("Delete Buffer"))
 
-keymap("n", "K", "<cmd>Lspsaga hover_doc", opts())
-
-keymap("n", "<C-w>", ":e #<CR>", opts())
+keymap("n", "<C-w>", ":e #<CR>", opts("Delete previous word"))
 keymap("i", "<C-Del>", "<esc>ldvwi", opts("Delete next word"))
 keymap("n", "<leader>hh", ":cd %:h<CR>", opts("Set home to current directory"))
 
@@ -61,7 +59,7 @@ keymap("n", "<leader>hh", ":cd %:h<CR>", opts("Set home to current directory"))
 keymap("t", "<esc>", [[<C-\><C-n>]], opts())
 
 --Surround
-keymap("n", "<leader>s", ":norm ysiw<CR>", opts("Surround with double quotes"))
+keymap("n", '<leader>s"', ':norm ysiw"<CR>', opts("Surround with double quotes"))
 keymap("n", "<leader>s(", ":norm ysiw(<CR>", opts("Surround with parentheses"))
 keymap("n", "<leader>s{", ":norm ysiw{<CR>", opts("Surround with curly braces"))
 keymap("n", "<leader>s[", ":norm ysiw[]<CR>", opts("Surround with square brackets"))
