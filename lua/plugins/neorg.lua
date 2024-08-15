@@ -7,6 +7,10 @@ return {
 			load = {
 				["core.defaults"] = {},
 				["core.concealer"] = {},
+				["core.export"] = {},
+				["core.export.markdown"] = {
+					extension = "md",
+				},
 				["core.dirman"] = {
 					config = {
 						workspaces = {

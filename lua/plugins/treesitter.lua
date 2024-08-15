@@ -23,7 +23,6 @@ return {
 				"vim",
 				"vimdoc",
 				"luadoc",
-				"java",
 			},
 
 			incremental_selection = {

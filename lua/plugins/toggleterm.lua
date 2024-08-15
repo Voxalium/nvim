@@ -5,7 +5,7 @@ return {
 		opts = {
 			open_mapping = [[<c-\>]],
 			shell = "pwsh",
-			size = 500,
+			size = 300,
 		},
 	},
 }

@@ -65,7 +65,3 @@ keymap("n", "<leader>s", ":norm ysiw<CR>", opts("Surround with double quotes"))
 keymap("n", "<leader>s(", ":norm ysiw(<CR>", opts("Surround with parentheses"))
 keymap("n", "<leader>s{", ":norm ysiw{<CR>", opts("Surround with curly braces"))
 keymap("n", "<leader>s[", ":norm ysiw[]<CR>", opts("Surround with square brackets"))
-
---Commands
-
-keymap("n", "<leader>:", ":Telescope commands<CR>", opts("Surround with double quotes"))
