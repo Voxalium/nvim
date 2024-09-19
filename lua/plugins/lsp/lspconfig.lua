@@ -122,19 +122,25 @@ return {
 					filetypes = { "java" },
 				})
 			end,
-      ["omnisharp"] = function()
-        lspconfig["omnisharp"].setup({
-          capabilities = capabilities,
-          filetypes = { "cs" },
-          cmd = { vim.fn.stdpath("data") .. "\\mason\\bin\\omnisharp.cmd" },
-          handlers = {
-            ["textDocument/definition"] = require("omnisharp_extended").definition_handler,
-            ["textDocument/typeDefinition"] = require("omnisharp_extended").type_definition_handler,
-            ["textDocument/references"] = require("omnisharp_extended").references_handler,
-            ["textDocument/implementation"] = require("omnisharp_extended").implementation_handler,
-          },
-        })
-      end,
+			["svelte"] = function()
+				lspconfig["svelte"].setup({
+					capabilities = capabilities,
+					filetypes = { "svelte" },
+				})
+			end,
+			["omnisharp"] = function()
+				lspconfig["omnisharp"].setup({
+					capabilities = capabilities,
+					filetypes = { "cs" },
+					cmd = { vim.fn.stdpath("data") .. "\\mason\\bin\\omnisharp.cmd" },
+					handlers = {
+						["textDocument/definition"] = require("omnisharp_extended").definition_handler,
+						["textDocument/typeDefinition"] = require("omnisharp_extended").type_definition_handler,
+						["textDocument/references"] = require("omnisharp_extended").references_handler,
+						["textDocument/implementation"] = require("omnisharp_extended").implementation_handler,
+					},
+				})
+			end,
 		})
 	end,
 }

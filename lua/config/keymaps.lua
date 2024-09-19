@@ -47,8 +47,10 @@ keymap("v", "<", "<gv", opts())
 keymap("v", ">", ">gv", opts())
 
 -- Navigate buffers
-keymap("n", "<S-Right>", ":bnext<CR>", opts())
-keymap("n", "<S-Left>", ":bprevious<CR>", opts())
+--keymap("n", "<S-Right>", ":bnext<CR>", opts())
+--keymap("n", "<S-Left>", ":bprevious<CR>", opts())
+keymap("n", "<S-Right>", ":tabnext<CR>", opts())
+keymap("n", "<S-Left>", ":tabprevious<CR>", opts())
 keymap("n", "<Leader>x", ":bdelete<CR>", opts("Delete Buffer"))
 
 -- Delete words

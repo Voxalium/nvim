@@ -3,6 +3,7 @@ local config = function()
 		"css",
 		"javascript",
 		"scss",
+		"svelte",
 		html = { mode = "background" },
 	}, { mode = "background" })
 end
