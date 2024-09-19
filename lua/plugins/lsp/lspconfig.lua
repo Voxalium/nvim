@@ -128,7 +128,7 @@ return {
 					filetypes = { "svelte" },
 				})
 			end,
-			["omnisharp"] = function()
+			--[[ ["omnisharp"] = function()
 				lspconfig["omnisharp"].setup({
 					capabilities = capabilities,
 					filetypes = { "cs" },
@@ -140,7 +140,7 @@ return {
 						["textDocument/implementation"] = require("omnisharp_extended").implementation_handler,
 					},
 				})
-			end,
+			end, ]]
 		})
 	end,
 }
