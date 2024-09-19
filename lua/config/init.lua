@@ -19,3 +19,6 @@ vim.cmd("hi NvimTreeNormalFloatBorder guibg=NONE guifg=NONE")
 vim.cmd("hi Pmenu guibg=#202020")
 vim.cmd("hi WhichKeyNormal guibg=#101010 guifg=NONE")
 vim.cmd("hi NvimTreePopUp guibg=NONE guifg=NONE")
+
+vim.cmd("hi TodoHighlight guibg=#ff0000 guifg=#ffffff")
+vim.cmd("match TodoHighlight /\\<TODO\\>/")
