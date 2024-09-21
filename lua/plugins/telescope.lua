@@ -35,8 +35,8 @@ local config = function()
 		},
 	})
 	--telescope.load_extension("fzf")
-  telescope.load_extension("project")
-  telescope.load_extension("software-licenses")
+	telescope.load_extension("project")
+	telescope.load_extension("software-licenses")
 end
 
 return {
@@ -46,17 +46,15 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-    "nvim-telescope/telescope-project.nvim",
+		"nvim-telescope/telescope-project.nvim",
 		"chip/telescope-software-licenses.nvim",
-		"folke/todo-comments.nvim",
 		"nvim-tree/nvim-web-devicons",
 	},
 	config = config,
 	key = {
-    keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>", { desc = "Find Keymaps" }),
+		keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>", { desc = "Find Keymaps" }),
 		keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Find Files" }),
 		keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Find Help" }),
-		keymap.set("n", "<leader>ft", ":TodoTelescope<CR>", { desc = "Find Todos" }),
 		keymap.set("n", "<leader>fa", ":Telescope <CR>", { desc = "Open Telescope" }),
 		keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Find Grep" }),
 		keymap.set("n", "<leader>fs", ":Telescope grep_string<CR>", { desc = "Find String" }),

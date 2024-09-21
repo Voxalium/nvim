@@ -22,10 +22,6 @@ return {
 				python = { "isort", "black" },
 				cs = { "csharpier" },
 			},
-			format_on_save = {
-				lsp_format = "fallback",
-				timeout_ms = 500,
-			},
 		})
 
 		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
