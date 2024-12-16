@@ -91,6 +91,8 @@ return {
 						"html",
 						"typescriptreact",
 						"javascriptreact",
+            "typescript",
+            "javacript",
 						"css",
 						"sass",
 						"scss",
@@ -120,6 +122,18 @@ return {
 				lspconfig["jdtls"].setup({
 					capabilities = capabilities,
 					filetypes = { "java" },
+				})
+			end,
+			["svelte"] = function()
+				lspconfig["svelte"].setup({
+					capabilities = capabilities,
+					filetypes = { "svelte" },
+				})
+			end,
+			["ols"] = function()
+				lspconfig["ols"].setup({
+					capabilities = capabilities,
+					filetypes = { "odin" },
 				})
 			end,
 			["omnisharp"] = function()

@@ -19,24 +19,23 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"html",
-				"tsserver",
 				"cssls",
+				"pyright",
 				"lua_ls",
 				"emmet_ls",
-				--"pyright",
-				--"jdtls",
+				"jdtls",
 			},
 		})
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"prettier",
+				"java-debug-adapter",
+				"java-test",
 				"stylua",
+				"isort",
+				"black",
+				"pylint",
 				"eslint_d",
-				--"java-debug-adapter",
-				--"java-test",
-				--"isort",
-				--"black",
-				--"pylint",
 			},
 		})
 	end,

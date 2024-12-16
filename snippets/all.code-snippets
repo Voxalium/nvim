@@ -1,0 +1,6 @@
+{
+  "global snippet": {
+    "prefix": "todo",
+    "body": ["$LINE_COMMENT TODO: ${1:task} "],
+  },
+}
