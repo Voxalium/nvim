@@ -42,6 +42,13 @@ vim.keymap.set("n", "<leader>t", function()
 	end
 end, { desc = "Toggle Terminal" })
 
+--Move in insert mode
+vim.keymap.set("i", "<C-h>", "<Left>")
+vim.keymap.set("i", "<C-l>", "<Right>")
+
+-- Set current dir
+vim.keymap.set("n", "<leader>hh", ":cd %:h<CR>")
+
 -- Navigate buffers
 vim.keymap.set("n", "<S-Right>", ":bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<S-Left>", ":bprevious<CR>", { desc = "Previous buffer" })

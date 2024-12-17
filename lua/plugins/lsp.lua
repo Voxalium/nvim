@@ -116,7 +116,15 @@ return {
 					},
 				})
 			end,
-			["jdtls"] = function()
+
+			["clangd"] = function()
+				lspconfig["clangd"].setup({
+					capabilities = capabilities,
+					filetypes = { "c", "cpp" },
+				})
+			end,
+
+			--[[ ["jdtls"] = function()
 				lspconfig["jdtls"].setup({
 					capabilities = capabilities,
 					filetypes = { "java" },
@@ -127,7 +135,7 @@ return {
 					capabilities = capabilities,
 					filetypes = { "svelte" },
 				})
-			end,
+			end, ]]
 			--[[ ["omnisharp"] = function()
 				lspconfig["omnisharp"].setup({
 					capabilities = capabilities,
