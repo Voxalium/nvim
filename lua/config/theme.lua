@@ -47,6 +47,7 @@ vim.cmd("hi Comment guifg=#00aa00 gui=italic")
 vim.cmd("hi Delimiter guifg=#000000")
 vim.cmd("hi @variable guifg=#000000")
 vim.cmd("hi Structure guifg=#00aa00 gui=bold")
+vim.cmd("hi ColorColumn guibg=#e5e5e5")
 
 vim.cmd("hi MatchParen guifg=#ffffff guibg=#0020ff gui=bold")
 -- Line

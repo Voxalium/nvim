@@ -10,6 +10,7 @@ return {
 		local lspconfig = require("lspconfig")
 		local mason_lspconfig = require("mason-lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
+		local capabilities = cmp_nvim_lsp.default_capabilities()
 
 		local keymap = vim.keymap
 
@@ -63,7 +64,7 @@ return {
 			end,
 		})
 
-		local capabilities = cmp_nvim_lsp.default_capabilities()
+
 		local attach = function(client, buffer) end
 		local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 		for type, icon in pairs(signs) do
@@ -91,8 +92,8 @@ return {
 						"html",
 						"typescriptreact",
 						"javascriptreact",
-            "typescript",
-            "javacript",
+						"typescript",
+						"javacript",
 						"css",
 						"sass",
 						"scss",

@@ -67,4 +67,6 @@ keymap("n", "<leader>s[", ":norm ysiw[]<CR>", opts("Surround with square bracket
 --Invlist
 keymap("n", "<leader>t", ":set invlist<CR>", opts("Set invlist"))
 
+--Make
+keymap("n", "<F5>", ":make <CR>", opts("Make command"))
 
