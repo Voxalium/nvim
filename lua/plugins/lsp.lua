@@ -124,6 +124,12 @@ return {
 				})
 			end,
 
+			["ols"] = function()
+				lspconfig["ols"].setup({
+					capabilities = capabilities,
+					filetypes = { "odin" },
+				})
+			end,
 			--[[ ["jdtls"] = function()
 				lspconfig["jdtls"].setup({
 					capabilities = capabilities,

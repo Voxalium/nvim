@@ -59,3 +59,6 @@ vim.keymap.set("n", "<A-j>", "<S-v> :m.+1<CR>==")
 vim.keymap.set("n", "<A-k>", "<S-v> :m.-2<CR>==")
 vim.keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv")
 vim.keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv")
+
+--Make
+vim.keymap.set("n", "<F5>", ":make <CR>")
