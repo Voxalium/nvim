@@ -64,7 +64,7 @@ return {
 		})
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
-		local attach = function(client, buffer) end
+		local attach = function() end
 		local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 		for type, icon in pairs(signs) do
 			local hl = "DiagnosticSign" .. type

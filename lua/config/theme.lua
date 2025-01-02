@@ -34,7 +34,7 @@ local theme = {
 	"ModeMsg guifg=#ff2000 gui=bold",
 	"MoreMsg guifg=#ff2000 gui=bold",
 	"Normal guibg=#efefef guifg=#000000 ctermbg=NONE",
-	"NormalFloat guibg=#efefef guifg=#000000 ctermbg=NONE",
+	"NormalFloat guibg=#aaaaee guifg=#000000 ctermbg=NONE",
 	"Number guifg=#000000",
 	"NvimTreeFolderName guibg=NONE guifg=#ff8020 gui=bold",
 	"NvimTreeNormalFloat guibg=NONE guifg=NONE",
@@ -60,8 +60,8 @@ local theme = {
 	"WarningMsg guifg=#ff2000 gui=bold",
 	"WhichKeyNormal guibg=#c5c5c5 guifg=NONE",
 	"function guifg=#ff8020 gui=bold",
+  "CmpMenu guibg=#A0A0A0",
   "ColorColumn guibg=#e5e5e5",
-  "CmpMenu guibg=#A0A0A0"
 }
 
 for _, v in ipairs(theme) do

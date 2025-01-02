@@ -35,13 +35,13 @@ return {
 			},
 			window = {
 				completion = {
-          border = "rounded",
+					border = "rounded",
 					winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
 				},
-        documentation = {
-          border = "rounded",
-          winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
-        },
+				documentation = {
+					border = "rounded",
+					winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+				},
 			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-k>"] = cmp.mapping.select_prev_item(),

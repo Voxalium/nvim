@@ -20,9 +20,10 @@ local options = {
 	swapfile = false,
 	tabstop = 2,
 	termguicolors = true,
+  undofile = true,
 	wrap = true,
 	linebreak = true,
-  colorcolumn= "100"
+  colorcolumn= "100",
 }
 
 for k, v in pairs(options) do
